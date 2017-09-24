@@ -1,0 +1,2 @@
+# tabkey
+A minimal WebExtension
