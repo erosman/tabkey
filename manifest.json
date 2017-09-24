@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+
+  "name": "TabKey",
+  "description": "Close Active Tab or Activate Next or previous Tab with a Single key",
+  "version": "1.0",
+  "homepage_url": "https://addons.mozilla.org/user/azbb/",
+  "author": "erosman",
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "commands": {
+    "close": {
+      "suggested_key": {
+        "default": "F1"
+      }
+    },
+    "previous": {
+      "suggested_key": {
+        "default": "F8"
+      }
+    },
+    "next": {
+      "suggested_key": {
+        "default": "F9"
+      }
+    }   
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "tabkey@eros.man",
+      "strict_min_version": "53.0"
+    }
+  }
+}
